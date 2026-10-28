@@ -1,0 +1,64 @@
+{
+  "schema": [
+    {
+      "name": "tournamentRounds",
+      "type": "number",
+      "label": "Tournament Rounds",
+      "default": 3,
+      "min": 1,
+      "max": 10,
+      "step": 1
+    },
+    {
+      "name": "turnTimerSeconds",
+      "type": "number",
+      "label": "Turn Timer Seconds",
+      "default": 60,
+      "min": 15,
+      "max": 180,
+      "step": 5
+    },
+    {
+      "name": "flipAnimDurationMs",
+      "type": "number",
+      "label": "Flip Animation Duration MS",
+      "default": 320,
+      "min": 150,
+      "max": 600,
+      "step": 50
+    },
+    {
+      "name": "enableHints",
+      "type": "boolean",
+      "label": "Show Hints & Flank Preview",
+      "default": true
+    },
+    {
+      "name": "showEvalBar",
+      "type": "boolean",
+      "label": "Display Evaluation Bar",
+      "default": true
+    },
+    {
+      "name": "colorblindMode",
+      "type": "boolean",
+      "label": "Colorblind Disc Glyphs",
+      "default": false
+    },
+    {
+      "name": "autoPass",
+      "type": "boolean",
+      "label": "Auto Pass Turn When No Moves",
+      "default": true
+    }
+  ],
+  "values": {
+    "tournamentRounds": 3,
+    "turnTimerSeconds": 60,
+    "flipAnimDurationMs": 320,
+    "enableHints": true,
+    "showEvalBar": true,
+    "colorblindMode": false,
+    "autoPass": true
+  }
+}

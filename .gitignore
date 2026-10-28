@@ -1,0 +1,34 @@
+# Signing / secrets - never commit
+**/_SIGNING-KEEP-SAFE/
+*.jks
+*.keystore
+*.p12
+*.pfx
+keystore.properties
+**/signing*.properties
+local.properties
+.env*
+google-services.json
+GoogleService-Info.plist
+# Dependencies / build outputs
+node_modules/
+dist/
+**/android/app/build/
+**/android/build/
+**/android/.gradle/
+**/android/capacitor-cordova-android-plugins/build/
+*.aab
+*.apk
+# IDE / junk
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+# Team folders / test output
+.backups/
+.archive/
+.logs/
+test-results/
+playwright-report/
+coverage/

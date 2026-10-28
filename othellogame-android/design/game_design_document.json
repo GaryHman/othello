@@ -1,0 +1,115 @@
+{
+  "title": "Reversi Tactics",
+  "hook": "Flip discs master tactical grid",
+  "game_overview": "A refined strategic board game featuring tactical disc-flipping, dynamic rating ladders, evaluation bar analysis, and distinct AI opponents.",
+  "artstyle": "modern-vector",
+  "genre": "board_card",
+  "winning_condition": "Have more discs of your color on the 8x8 board when all cells are filled or neither player has valid moves.",
+  "losing_condition": "Have fewer discs than your opponent when the game reaches terminal board state.",
+  "player_mode": "multi_player",
+  "supported_orientations": [
+    "landscape",
+    "portrait",
+    "any"
+  ],
+  "input_methods": [
+    "touch",
+    "mouse",
+    "keyboard"
+  ],
+  "score_options": {
+    "score_type": "points",
+    "score_order": "higher_is_better"
+  },
+  "low_end_device_support": true,
+  "mobile_playable": true,
+  "tv_playable": false,
+  "language": [
+    "en"
+  ],
+  "content_descriptors": [],
+  "controls": [
+    {
+      "input": "Left Mouse Click / Screen Tap",
+      "action": "Select coordinate on the 8x8 grid to place a disc and execute flippings."
+    },
+    {
+      "input": "U / Undo Button",
+      "action": "Take back the latest move for tactical review."
+    },
+    {
+      "input": "H / Hint Button",
+      "action": "Toggle optimal move suggestions and flank indicators."
+    },
+    {
+      "input": "Spacebar / Pass Button",
+      "action": "Pass turn when no legal moves are available."
+    },
+    {
+      "input": "Virtual Touch Controls",
+      "action": "Responsive tap targets and on-screen control action bar for mobile play."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design Pillars",
+      "content": "1. Strategic Reversibility: Every placement drastically alters board parity and captures opposing flanks. 2. Analytical Polish: High-level tactical indicators, move evaluation engine (Brilliant, Best, Blunder), and real-time advantage bar. 3. Accessible Mastery: Smooth intuitive controls with scalable AI difficulty levels and simulated competitive matchmaking.",
+      "summary": "Strategic depth, tactical clarity, and competitive prestige."
+    },
+    {
+      "title": "Core Loop",
+      "content": "Player chooses between Quick Match (simulated online rival pairing), Ranked Bots (tiered AI with distinct personality ratings from 600 to 2200 ELO), or Local Pass & Play. Each turn, players place a two-tone disc to bracket and flip one or more opposing discs along orthogonal or diagonal rays. Moves continue until the grid is filled or both players pass, culminating in an end-game score review, accuracy breakdown, and rating adjustments.",
+      "summary": "Select match, outflank discs, calculate advantage, and climb the rating ladder."
+    },
+    {
+      "title": "Core Mechanics",
+      "content": "1. Flanking Capture: Placing a disc traps opposing discs between the new placement and existing friendly discs, immediately flipping them. 2. Corner & Edge Anchoring: Corners are permanent stable positions that cannot be re-flipped, serving as critical endgame leverage. 3. Dynamic Evaluation Bar: A continuous vertical gauge evaluates board balance, territory control, and mobility delta after every ply. 4. Move Quality Badges: Notation history tags each move as Best Move, Good, Inaccuracy, Mistake, or Blunder based on board equity change.",
+      "summary": "Flanking capture rules, mobility management, and evaluation bar."
+    },
+    {
+      "title": "Movement & Scrolling Alignment",
+      "content": "Scrolling Axis: Static single-screen tabletop viewport without camera scroll. Asset Orientation Baseline: True 90-degree orthogonal overhead view looking straight down at the 8x8 grid. Movement Physics Dynamics: Discrete coordinate-snapping turn execution; pieces smoothly transition through simulated 3D flip rotational axes (0 to 180 degrees flip). Camera Behavior: Rigidly locked center framing on the 8x8 arena with adaptive side panels for clock, evaluation bar, and notation log.",
+      "summary": "Static top-down tabletop board alignment with responsive grid coordinate mapping."
+    },
+    {
+      "title": "Visual Hierarchy & Layering",
+      "content": "Layer Separation: The background features a deep slate wood grain finish. The board arena utilizes a rich forest green / emerald felt grid with subtle coordinate labels (A-H, 1-8). Active play pieces consist of glossy obsidian black and pearl ivory white discs with specular bevels. Valid move targets are designated by soft translucent guide pips. Obstacle & Hazard Affordance: Danger tiles (such as volatile X-squares adjacent to open corners) display faint amber warning badges when hints are active. HUD Overlay Integration: Digital clocks, evaluation bar, player avatars, and move history stream neatly along desktop flanks or portrait top/bottom headers.",
+      "summary": "Emerald baize grid, glossy tactile discs, and high-contrast analytical overlays."
+    },
+    {
+      "title": "Characters & Opponents",
+      "content": "1. Novice Bot 'Scout' (Rating 600): Plays aggressively for immediate piece count without corner awareness. 2. Tactical Bot 'Bishop' (Rating 1200): Prioritizes edge control and minimizes early piece volatility. 3. Master Bot 'Grandmaster Ada' (Rating 1800): Employs min-max frontier analysis, mobility starvation, and endgame parity calculation. 4. Simulated Quick-Match Rivals: Dynamically generated player handles, country flags, and ratings that simulate ranked online quick pairing.",
+      "summary": "Tiered tactical AI personalities and simulated matchmaking opponents."
+    },
+    {
+      "title": "Fairness Tools",
+      "content": "Legal move pips highlight permissible placements; optional evaluation engine highlights the engine-recommended line; interactive game review mode allows scrubbing back through plies to analyze turning points and missed tactics.",
+      "summary": "Visual assistance, move hints, and full match review."
+    },
+    {
+      "title": "Juice & Game Feel",
+      "content": "Anticipation Juice: Hovering or holding over a valid square generates a ripple preview showing which opponent discs will flip. State Change Juice: Discs flip with a sequenced domino wave effect featuring smooth 3D rotational perspective, accompanied by wood-tap audio feedback. Impact Juice: Securing a corner triggers a golden flash and haptic micro-pulse; game triumph triggers banner confetti and rating increment fanfare.",
+      "summary": "Tactile piece flips, kinetic click feedback, and celebratory end-of-match banner."
+    },
+    {
+      "title": "Social Mechanics & Audience",
+      "content": "Designed for tabletop strategy enthusiasts and competitive minds. Features simulated online quick-pairing lobbies with rating updates (+/- ELO), match statistics tracking (win rates, accuracies), and a Pass & Play mode to challenge friends on a shared device.",
+      "summary": "Simulated online rating ladder, custom player avatars, and local pass-and-play."
+    },
+    {
+      "title": "Accessibility",
+      "content": "Colorblind mode embosses distinct geometric symbols (sun for light, moon for dark) on discs. Move confirmation setting prevents accidental mobile touches. Timers can be customized (Blitz 3m, Rapid 10m, or Untimed Casual).",
+      "summary": "High-contrast textures, tactile colorblind glyphs, and adjustable timer speeds."
+    },
+    {
+      "title": "Structural Integrity",
+      "content": "Main Hub -> Game Mode Selection (Play Bot / Quick Match / Pass & Play) -> Match Viewport with Live Evaluation -> Post-Game Analysis Summary -> Rematch / Review Board.",
+      "summary": "Seamless menu transitions, in-game analysis suite, and match recap screen."
+    },
+    {
+      "title": "Virtual Touch Controls Implementation",
+      "content": "Render on-screen virtual action buttons for Undo, Hint, Pass, and Resign in a dedicated mobile action toolbar. Crucially: 1) Conditionally render mobile-specific UI using device detection, 2) Wire up onPointerLeave and onPointerCancel alongside onPointerUp to prevent stuck inputs, 3) Apply touch-none CSS class directly to interactive control buttons to eliminate unwanted scrolling during piece drops, 4) Apply pointer-events-auto strictly to active button elements rather than full-width containers to maintain uninterrupted board tap responsiveness.",
+      "summary": "Mobile-optimized touch targets, gesture safety, and adaptive layouts."
+    }
+  ]
+}

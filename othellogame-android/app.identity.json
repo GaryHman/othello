@@ -1,0 +1,7 @@
+{
+  "appId": "com.meneer.reversi",
+  "appName": "Reversi",
+  "versionCode": 2,
+  "versionName": "1.0.1",
+  "_note": "appId = Google Play package name, PERMANENT once published. Bump versionCode (+1) and versionName for every Play upload. capacitor.config.ts and android/app/build.gradle both read this file."
+}
